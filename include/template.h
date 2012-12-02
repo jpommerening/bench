@@ -38,12 +38,14 @@ extern "C" {
   
 typedef struct template_s template_t;
 
+#define TEMPLATE_INIT { NULL }
+
 struct template_s {
-  
+  void* template_data;
 };
 
-void template_init( template_t* template );
-void template_destroy( template_t* template );
+TEMPLATE_EXTERN void template_init( template_t* template );
+TEMPLATE_EXTERN void template_destroy( template_t* template );
 
 #ifdef __cplusplus
 }
