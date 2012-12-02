@@ -30,8 +30,7 @@ LINKFLAGS =
 
 CPPFLAGS += -D_WIN32_WINNT=0x0600
 
-OBJS += src/context.o
-OBJS += src/posix.o
+OBJS += src/template.o
 
 template.a: $(OBJS)
 	$(AR) rcs template.a $(OBJS)
