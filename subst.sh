@@ -13,9 +13,9 @@ subyear=`date "+%Y"`
 
 origlower="template"
 origupper="TEMPLATE"
-origname="%NAME%"
-origemail="%EMAIL%"
-origyear="%YEAR%"
+origname="@NAME@"
+origemail="@EMAIL@"
+origyear="@YEAR@"
 
 files="LICENSE Makefile *.mk include src test *.xcodeproj .gitignore"
 
