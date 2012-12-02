@@ -17,7 +17,7 @@ origname="@NAME@"
 origemail="@EMAIL@"
 origyear="@YEAR@"
 
-files="LICENSE Makefile *.mk include src test *.xcodeproj .gitignore"
+files="LICENSE README.md Makefile *.mk include src test *.xcodeproj .gitignore"
 
 echo "I'll fill in the following information for you:"
 echo
