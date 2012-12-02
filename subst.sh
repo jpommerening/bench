@@ -42,6 +42,8 @@ grep -rl "$origname\|$origemail\|$origyear" $files | \
 grep -rl "$origlower" $files | xargs sed -i.bak "s/$origlower/$sublower/g"
 grep -rl "$origupper" $files | xargs sed -i.bak "s/$origupper/$subupper/g"
 
+find . -name "*.bak" -delete
+
 mvfiles=`find $files -name "$origlower*" -or -name "*-$origlower.*"`
 
 
@@ -50,8 +52,6 @@ for file in $mvfiles; do
   git rm $file
   git add ${file//$origlower/$sublower}
 done
-
-find . -name "*.bak" -delete
 
 echo
 git add $files
