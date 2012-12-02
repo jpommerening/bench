@@ -2,6 +2,8 @@
 #include "template.h"
 #include "internal.h"
 
+#include <stdlib.h>
+
 void template_init( template_t* template ) {
   template->data = NULL;
 }
