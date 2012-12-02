@@ -46,10 +46,9 @@ find . -name "*.bak" -delete
 
 mvfiles=`find $files -name "$origlower*" -or -name "*-$origlower.*"`
 
-
 for file in $mvfiles; do
   mv "$file" "${file//$origlower/$sublower}"
-  git rm $file
+  git rm -r $file
   git add ${file//$origlower/$sublower}
 done
 
