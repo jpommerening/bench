@@ -54,5 +54,7 @@ done
 
 echo
 git add $files
+git commit -m "Created $sublower project from template."
+git remote rm origin
 
 popd >/dev/null
