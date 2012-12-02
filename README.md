@@ -9,15 +9,34 @@ substitutions.
 Usage
 -----
 
+### Initial setup:
+
+Just clone the template project and call the `subst.sh` script. The script
+takes a single parameter: The name for your new project. It uses `git config`
+to determine your name and email, and inserts the current year into all license
+templates (which are BSD, by the way).
+
     git clone git@github.com:jpommerening/template.git myproject
     cd myproject
     ./subst.sh myproject
     git commit
 
-License
-=======
+### Pulling updates:
 
-Copyright (c) @YEAR@, @NAME@ <@EMAIL@>
+After doint it's substitutions and renaming, the script commits all modified files
+and renames `origin` to `template`.
+
+So, assuming you´re on the `master` branch, if you want to pull updates (in many
+cases this might actually work, because `git` is awesome) just use the following
+command:
+
+    git pull template master
+
+
+License
+-------
+
+Copyright &copy; @YEAR@, @NAME@ <@EMAIL@>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
