@@ -57,6 +57,7 @@
 		41111781166B92AF00D0313A /* template-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "template-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		411117A0166BE49600D0313A /* template.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = template.c; sourceTree = "<group>"; };
 		411117A2166BE4A300D0313A /* test-template.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-template.c"; sourceTree = "<group>"; };
+		411117BB166BF0C400D0313A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				41111763166B919800D0313A /* LICENSE */,
+				411117BB166BF0C400D0313A /* README.md */,
 				41111764166B919800D0313A /* Makefile */,
 				4111175F166B919800D0313A /* config-mingw.mk */,
 				41111760166B919800D0313A /* config-unix.mk */,

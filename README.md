@@ -1,7 +1,18 @@
 template
 ========
 
-...
+This is my template project. Lately, most of my C projects look the same. So,
+to save me from some serious work (setting up XCode projects is a nightmare)
+I made this little template and supplied a script to do all the neccessary
+substitutions.
+
+Usage
+-----
+
+    git clone git@github.com:jpommerening/template.git myproject
+    cd myproject
+    ./subst.sh myproject
+    git commit
 
 License
 =======
