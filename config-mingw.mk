@@ -30,7 +30,11 @@ LINKFLAGS =
 
 CPPFLAGS += -D_WIN32_WINNT=0x0600
 
+OBJS += src/main.o
+OBJS += src/runner.o
+OBJS += src/listener.o
 OBJS += src/test.o
+OBJS += src/suite.o
 
 test.a: $(OBJS)
 	$(AR) rcs test.a $(OBJS)

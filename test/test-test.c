@@ -1,9 +1,17 @@
 #include "test.h"
 #include "test.h"
 
-TEST( test_test ) {
-  test_t test = TEST_INIT;
-  ASSERT( 0, "Congratulations, your test fails!" );
-  test_destroy( &test );
+TEST( pass ) {
+  MSG( "Everything's fine." );
 }
+TEST( warn ) {
+  WARN( "Oops. Oh, oh." );
+}
+TEST( skip ) {
+  SKIP( "I'm so in trouble." );
+}
+TEST( fail ) {
+  FAIL( "" );
+}
+
 
