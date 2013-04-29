@@ -1,40 +1,40 @@
-test
-========
+# test
 
-This is my test project. Lately, most of my C projects look the same. So,
-to save me from some serious work (setting up XCode projects is a nightmare)
-I made this little test and supplied a script to do all the neccessary
-substitutions.
+> *Dead-simple, modern, fun, unit testing for C.*
 
-Usage
------
+## How to use this?
 
-### Initial setup:
+Compile your tests to a library and run it with the test-runner.
 
-Just clone the test project and call the `subst.sh` script. The script
-takes a single parameter: The name for your new project. It uses `git config`
-to determine your name and email, and inserts the current year into all license
-tests (which are BSD, by the way).
+```console
+you@yourbox$ utest yourlib.so
+TEST this_test_passes: PASS [0.010ms]
+TEST this_test_fails: ...
+test/test-something-broken.c:30: This should work.
+ ... this_test_fails: FAIL [0.140ms]
+TEST this_test_will_be_skipped: SKIP [0.003ms]
+RESULTS: 1 passed, 1 failed, 1 skipped
+you@yourbox$ echo "$?"
+1
+```
 
-    git clone git@github.com:jpommerening/test.git myproject
-    cd myproject
-    ./subst.sh myproject
-    git commit
+Wait, where did those tests come from?
 
-### Pulling updates:
+```C
+#include "test.h"
 
-After doint it's substitutions and renaming, the script commits all modified files
-and renames `origin` to `test`.
+TEST( this_test_passes ) {
+  ASSERT(1, "Should be fine.");
+}
+TEST( this_test_fails ) {
+  ASSERTEQ(1, 2, "This should work". );
+}
+TEST( this_test_will_be_skipped ) {
+  SKIP;
+}
+```
 
-So, assuming you´re on the `master` branch, if you want to pull updates (in many
-cases this might actually work, because `git` is awesome) just use the following
-command:
-
-    git pull test master
-
-
-License
--------
+## [License](LICENSE-BSD)
 
 Copyright &copy; 2013, Jonas Pommerening <jonas.pommerening@gmail.com>
 All rights reserved.
