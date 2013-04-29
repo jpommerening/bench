@@ -1,9 +1,9 @@
-template
+test
 ========
 
-This is my template project. Lately, most of my C projects look the same. So,
+This is my test project. Lately, most of my C projects look the same. So,
 to save me from some serious work (setting up XCode projects is a nightmare)
-I made this little template and supplied a script to do all the neccessary
+I made this little test and supplied a script to do all the neccessary
 substitutions.
 
 Usage
@@ -11,12 +11,12 @@ Usage
 
 ### Initial setup:
 
-Just clone the template project and call the `subst.sh` script. The script
+Just clone the test project and call the `subst.sh` script. The script
 takes a single parameter: The name for your new project. It uses `git config`
 to determine your name and email, and inserts the current year into all license
-templates (which are BSD, by the way).
+tests (which are BSD, by the way).
 
-    git clone git@github.com:jpommerening/template.git myproject
+    git clone git@github.com:jpommerening/test.git myproject
     cd myproject
     ./subst.sh myproject
     git commit
@@ -24,19 +24,19 @@ templates (which are BSD, by the way).
 ### Pulling updates:
 
 After doint it's substitutions and renaming, the script commits all modified files
-and renames `origin` to `template`.
+and renames `origin` to `test`.
 
 So, assuming you´re on the `master` branch, if you want to pull updates (in many
 cases this might actually work, because `git` is awesome) just use the following
 command:
 
-    git pull template master
+    git pull test master
 
 
 License
 -------
 
-Copyright &copy; @YEAR@, @NAME@ <@EMAIL@>
+Copyright &copy; 2013, Jonas Pommerening <jonas.pommerening@gmail.com>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

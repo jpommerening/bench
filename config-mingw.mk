@@ -30,12 +30,12 @@ LINKFLAGS =
 
 CPPFLAGS += -D_WIN32_WINNT=0x0600
 
-OBJS += src/template.o
+OBJS += src/test.o
 
-template.a: $(OBJS)
-	$(AR) rcs template.a $(OBJS)
+test.a: $(OBJS)
+	$(AR) rcs test.a $(OBJS)
 
-src/%.o: src/%.c include/template.h src/internal.h
+src/%.o: src/%.c include/test.h src/internal.h
 	$(CC) $(CSTDFLAG) $(CPPFLAGS) -Isrc $(CFLAGS) -c $< -o $@
 
 

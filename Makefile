@@ -1,4 +1,4 @@
-# Copyright (c) @YEAR@, @NAME@ <@EMAIL@>
+# Copyright (c) 2013, Jonas Pommerening <jonas.pommerening@gmail.com>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -35,7 +35,7 @@ else
 include config-unix.mk
 endif
 
-LIBS = template.a
+LIBS = test.a
 TESTS = test/test-*.c
 BENCHMARKS = test/benchmark-*.c
 

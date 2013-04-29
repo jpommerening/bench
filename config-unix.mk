@@ -28,7 +28,7 @@ LINKFLAGS =
 
 CPPFLAGS += -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
 
-OBJS += src/template.o
+OBJS += src/test.o
 
 ifeq (SunOS,$(uname_S))
 CPPFLAGS +=
@@ -60,10 +60,10 @@ endif
 ifneq (,$(findstring CYGWIN,$(uname_S)))
 endif
 
-template.a: $(OBJS)
-	$(AR) rcs template.a $(OBJS)
+test.a: $(OBJS)
+	$(AR) rcs test.a $(OBJS)
 
-src/%.o: src/%.c include/template.h src/internal.h
+src/%.o: src/%.c include/test.h src/internal.h
 	$(CC) $(CSTDFLAG) $(CPPFLAGS) -Isrc $(CFLAGS) -c $< -o $@
 
 clean-platform:

@@ -1,4 +1,4 @@
-#ifndef _TEMPLATE_INTERNAL_H_
-#define _TEMPLATE_INTERNAL_H_
+#ifndef _TEST_INTERNAL_H_
+#define _TEST_INTERNAL_H_
 
 #endif

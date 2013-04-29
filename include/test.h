@@ -1,7 +1,7 @@
 /* -*- Mode: C; tab-width: 2; c-basic-offset: 2 -*- */
 /* vim:set softtabstop=2 shiftwidth=2: */
 /* 
- * Copyright (c) @YEAR@, @NAME@ <@EMAIL@>
+ * Copyright (c) 2013, Jonas Pommerening <jonas.pommerening@gmail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -24,8 +24,8 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#ifndef _TEMPLATE_H_
-#define _TEMPLATE_H_
+#ifndef _TEST_H_
+#define _TEST_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -34,18 +34,18 @@ extern "C" {
 #include <unistd.h>
 #include <stddef.h>
 
-#define TEMPLATE_EXTERN extern
+#define TEST_EXTERN extern
   
-typedef struct template_s template_t;
+typedef struct test_s test_t;
 
-#define TEMPLATE_INIT { NULL }
+#define TEST_INIT { NULL }
 
-struct template_s {
+struct test_s {
   void* data;
 };
 
-TEMPLATE_EXTERN void template_init( template_t* template );
-TEMPLATE_EXTERN void template_destroy( template_t* template );
+TEST_EXTERN void test_init( test_t* test );
+TEST_EXTERN void test_destroy( test_t* test );
 
 #ifdef __cplusplus
 }

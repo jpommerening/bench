@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41111771166B919800D0313A /* template.h in Headers */ = {isa = PBXBuildFile; fileRef = 41111762166B919800D0313A /* template.h */; };
+		41111771166B919800D0313A /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = 41111762166B919800D0313A /* test.h */; };
 		41111772166B919800D0313A /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 41111764166B919800D0313A /* Makefile */; };
 		41111774166B919800D0313A /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 41111767166B919800D0313A /* internal.h */; };
 		4111177B166B919800D0313A /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = 41111770166B919800D0313A /* test.h */; };
 		4111178B166B92D000D0313A /* gen-tests.c in Sources */ = {isa = PBXBuildFile; fileRef = 4111176A166B919800D0313A /* gen-tests.c */; };
 		4111178C166B92D000D0313A /* run-tests.c in Sources */ = {isa = PBXBuildFile; fileRef = 4111176C166B919800D0313A /* run-tests.c */; };
 		4111178E166B92D000D0313A /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 4111176F166B919800D0313A /* test.c */; };
-		41111791166B92E700D0313A /* libtemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41111758166B917000D0313A /* libtemplate.a */; };
-		411117A1166BE49600D0313A /* template.c in Sources */ = {isa = PBXBuildFile; fileRef = 411117A0166BE49600D0313A /* template.c */; };
-		411117A4166BE4BE00D0313A /* test-template.c in Sources */ = {isa = PBXBuildFile; fileRef = 411117A2166BE4A300D0313A /* test-template.c */; };
+		41111791166B92E700D0313A /* libtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41111758166B917000D0313A /* libtest.a */; };
+		411117A1166BE49600D0313A /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 411117A0166BE49600D0313A /* test.c */; };
+		411117A4166BE4BE00D0313A /* test-test.c in Sources */ = {isa = PBXBuildFile; fileRef = 411117A2166BE4A300D0313A /* test-test.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +25,7 @@
 			containerPortal = 4111174F166B917000D0313A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 41111757166B917000D0313A;
-			remoteInfo = template;
+			remoteInfo = test;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,10 +42,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		41111758166B917000D0313A /* libtemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		41111758166B917000D0313A /* libtest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4111175F166B919800D0313A /* config-mingw.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "config-mingw.mk"; sourceTree = "<group>"; };
 		41111760166B919800D0313A /* config-unix.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "config-unix.mk"; sourceTree = "<group>"; };
-		41111762166B919800D0313A /* template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = template.h; sourceTree = "<group>"; };
+		41111762166B919800D0313A /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		41111763166B919800D0313A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		41111764166B919800D0313A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		41111767166B919800D0313A /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
@@ -54,9 +54,9 @@
 		4111176C166B919800D0313A /* run-tests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "run-tests.c"; sourceTree = "<group>"; };
 		4111176F166B919800D0313A /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		41111770166B919800D0313A /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
-		41111781166B92AF00D0313A /* template-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "template-test"; sourceTree = BUILT_PRODUCTS_DIR; };
-		411117A0166BE49600D0313A /* template.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = template.c; sourceTree = "<group>"; };
-		411117A2166BE4A300D0313A /* test-template.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-template.c"; sourceTree = "<group>"; };
+		41111781166B92AF00D0313A /* test-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "test-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		411117A0166BE49600D0313A /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		411117A2166BE4A300D0313A /* test-test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-test.c"; sourceTree = "<group>"; };
 		411117BB166BF0C400D0313A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41111791166B92E700D0313A /* libtemplate.a in Frameworks */,
+				41111791166B92E700D0313A /* libtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +97,8 @@
 		41111759166B917000D0313A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41111758166B917000D0313A /* libtemplate.a */,
-				41111781166B92AF00D0313A /* template-test */,
+				41111758166B917000D0313A /* libtest.a */,
+				41111781166B92AF00D0313A /* test-test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 		41111761166B919800D0313A /* include */ = {
 			isa = PBXGroup;
 			children = (
-				41111762166B919800D0313A /* template.h */,
+				41111762166B919800D0313A /* test.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				41111767166B919800D0313A /* internal.h */,
-				411117A0166BE49600D0313A /* template.c */,
+				411117A0166BE49600D0313A /* test.c */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 				4111176A166B919800D0313A /* gen-tests.c */,
 				4111176B166B919800D0313A /* gen-tests.sh */,
 				4111176C166B919800D0313A /* run-tests.c */,
-				411117A2166BE4A300D0313A /* test-template.c */,
+				411117A2166BE4A300D0313A /* test-test.c */,
 				4111176F166B919800D0313A /* test.c */,
 				41111770166B919800D0313A /* test.h */,
 			);
@@ -140,7 +140,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41111771166B919800D0313A /* template.h in Headers */,
+				41111771166B919800D0313A /* test.h in Headers */,
 				41111774166B919800D0313A /* internal.h in Headers */,
 				4111177B166B919800D0313A /* test.h in Headers */,
 			);
@@ -149,9 +149,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		41111757166B917000D0313A /* template */ = {
+		41111757166B917000D0313A /* test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4111175C166B917000D0313A /* Build configuration list for PBXNativeTarget "template" */;
+			buildConfigurationList = 4111175C166B917000D0313A /* Build configuration list for PBXNativeTarget "test" */;
 			buildPhases = (
 				41111754166B917000D0313A /* Sources */,
 				41111755166B917000D0313A /* Frameworks */,
@@ -162,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = template;
-			productName = template;
-			productReference = 41111758166B917000D0313A /* libtemplate.a */;
+			name = test;
+			productName = test;
+			productReference = 41111758166B917000D0313A /* libtest.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		41111780166B92AF00D0313A /* template-test */ = {
+		41111780166B92AF00D0313A /* test-test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41111788166B92AF00D0313A /* Build configuration list for PBXNativeTarget "template-test" */;
+			buildConfigurationList = 41111788166B92AF00D0313A /* Build configuration list for PBXNativeTarget "test-test" */;
 			buildPhases = (
 				4111177D166B92AF00D0313A /* Sources */,
 				4111177E166B92AF00D0313A /* Frameworks */,
@@ -180,9 +180,9 @@
 			dependencies = (
 				41111790166B92DC00D0313A /* PBXTargetDependency */,
 			);
-			name = "template-test";
-			productName = "template-test";
-			productReference = 41111781166B92AF00D0313A /* template-test */;
+			name = "test-test";
+			productName = "test-test";
+			productReference = 41111781166B92AF00D0313A /* test-test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Jonas Pommerening";
 			};
-			buildConfigurationList = 41111752166B917000D0313A /* Build configuration list for PBXProject "template" */;
+			buildConfigurationList = 41111752166B917000D0313A /* Build configuration list for PBXProject "test" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -206,8 +206,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41111757166B917000D0313A /* template */,
-				41111780166B92AF00D0313A /* template-test */,
+				41111757166B917000D0313A /* test */,
+				41111780166B92AF00D0313A /* test-test */,
 			);
 		};
 /* End PBXProject section */
@@ -219,7 +219,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/test/test-template.c",
+				"$(SRCROOT)/test/test-test.c",
 			);
 			outputPaths = (
 				"$(SRCROOT)/test/gen-tests.c",
@@ -236,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41111772166B919800D0313A /* Makefile in Sources */,
-				411117A1166BE49600D0313A /* template.c in Sources */,
+				411117A1166BE49600D0313A /* test.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +247,7 @@
 				4111178B166B92D000D0313A /* gen-tests.c in Sources */,
 				4111178C166B92D000D0313A /* run-tests.c in Sources */,
 				4111178E166B92D000D0313A /* test.c in Sources */,
-				411117A4166BE4BE00D0313A /* test-template.c in Sources */,
+				411117A4166BE4BE00D0313A /* test-test.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +256,7 @@
 /* Begin PBXTargetDependency section */
 		41111790166B92DC00D0313A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 41111757166B917000D0313A /* template */;
+			target = 41111757166B917000D0313A /* test */;
 			targetProxy = 4111178F166B92DC00D0313A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -362,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41111752166B917000D0313A /* Build configuration list for PBXProject "template" */ = {
+		41111752166B917000D0313A /* Build configuration list for PBXProject "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4111175A166B917000D0313A /* Debug */,
@@ -371,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4111175C166B917000D0313A /* Build configuration list for PBXNativeTarget "template" */ = {
+		4111175C166B917000D0313A /* Build configuration list for PBXNativeTarget "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4111175D166B917000D0313A /* Debug */,
@@ -380,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41111788166B92AF00D0313A /* Build configuration list for PBXNativeTarget "template-test" */ = {
+		41111788166B92AF00D0313A /* Build configuration list for PBXNativeTarget "test-test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41111789166B92AF00D0313A /* Debug */,
