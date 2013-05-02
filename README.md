@@ -34,6 +34,26 @@ TEST( this_test_will_be_skipped ) {
 }
 ```
 
+## Options
+
+* `-l <listener>` - use the given listener
+* `-o <output>` - write to the given output file
+* `-c <config>` - read commands from the given config file
+* `-e <script>` - evaluate the given commands
+* `-i` - interactive mode
+
+## Commands
+
+```
+add listener <name> <output/options>
+remove listener <name>
+include <file>
+run [all]
+run test <testname>
+run suite <suitename>
+run match <test-pattern>
+```
+
 ## [License](LICENSE-BSD)
 
 Copyright &copy; 2013, Jonas Pommerening <jonas.pommerening@gmail.com>

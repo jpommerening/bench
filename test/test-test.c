@@ -14,4 +14,18 @@ TEST( fail ) {
   FAIL( "" );
 }
 
+typedef struct test_data_s test_data_t;
+struct test_data_s {
+  const char* str;
+  int num;
+};
 
+test_data_t test_data[] = {
+  { "One", 1 },
+  { "Two", 2 },
+  { "Three", 3 }
+};
+
+TEST( data_pass, test_data, test_data_t* data ) {
+  ASSERT( data->num < 4 );
+}

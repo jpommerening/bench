@@ -39,13 +39,15 @@ LIBS = test.a
 TESTS = test/test-*.c
 BENCHMARKS = test/benchmark-*.c
 
+default: all test
+
 all: $(LIBS)
 
 test/gen-tests.c: test/gen-tests.sh $(TESTS)
 	test/gen-tests.sh $(TESTS) > test/gen-tests.c
 
 test/run-tests$(E): test/gen-tests.c $(TESTS) $(LIBS)
-	$(CC) $(CPPFLAGS) -o test/run-tests test/gen-tests.c \
+	$(CC) $(CPPFLAGS) $(LINKFLAGS) -o test/run-tests test/gen-tests.c \
 	  $(TESTS) $(LIBS)
 
 .PHONY: clean clean-platform distclean distclean-platform test bench

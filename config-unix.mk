@@ -24,15 +24,19 @@
 E =
 CSTDFLAG = --std=c99 -pedantic -Wall -Wextra
 CFLAGS += -g
-LINKFLAGS = 
+LINKFLAGS =
 
 CPPFLAGS += -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
 
 OBJS += src/main.o
 OBJS += src/runner.o
 OBJS += src/listener.o
+OBJS += src/term.o
+OBJS += src/log.o
 OBJS += src/test.o
 OBJS += src/suite.o
+
+OBJS += $(patsubst %.c,%.o,$(wildcard src/listener/*.c))
 
 ifeq (SunOS,$(uname_S))
 CPPFLAGS +=
@@ -47,6 +51,9 @@ OBJS +=
 endif
 
 ifeq (Linux,$(uname_S))
+CPPFLAGS +=
+LINKFLAGS +=
+OBJS +=
 endif
 
 ifeq (FreeBSD,$(uname_S))

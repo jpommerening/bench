@@ -70,7 +70,7 @@ struct test_s {
   const char* time;
   test_cb callback;
   ptrdiff_t datastep;
-  size_t    datalength;
+  size_t datalength;
   const void* data;
 };
 

@@ -37,8 +37,10 @@ test_result_t run( const test_t* test, const void* data, listener_t* listener ) 
 
   } else if( data ) {
     (test->callback.data_cb)( &api, data );
+    test__result( &context, TEST_PASS );
   } else {
     (test->callback.void_cb)( &api );
+    test__result( &context, TEST_PASS );
   }
 
   return context.result;

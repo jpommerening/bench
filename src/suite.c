@@ -2,7 +2,7 @@
 
 test_result_t suite_run( const suite_t* suite ) {
   suite_status_t status = SUITE_STATUS_INIT(suite);
-  listener_t* listener = NULL;
+  listener_t* listener = listener_progress();
 
   return suite_status_run( &status, listener );
 }
