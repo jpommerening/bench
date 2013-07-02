@@ -1,4 +1,4 @@
-# test
+# bench
 
 > *Dead-simple, modern, fun, unit testing for C.*
 
