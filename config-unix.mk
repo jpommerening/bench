@@ -71,8 +71,11 @@ endif
 ifneq (,$(findstring CYGWIN,$(uname_S)))
 endif
 
-test.a: $(OBJS)
-	$(AR) rcs test.a $(OBJS)
+bench.a: $(OBJS)
+	$(AR) rcs $@ $(OBJS)
+
+bench: bench.a deps/choice/choice.c deps/linenoise/linenoise.c
+	$(CC) $(CSTDFLAG) $(CPPFLAGS) $^ -o $@
 
 src/%.o: src/%.c include/test.h src/internal.h
 	$(CC) $(CSTDFLAG) $(CPPFLAGS) -Isrc $(CFLAGS) -c $< -o $@

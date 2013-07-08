@@ -1,0 +1,6 @@
+[submodule "deps/choice"]
+	path = deps/choice
+	url = https://github.com/jpommerening/choice.git
+[submodule "deps/linenoise"]
+	path = deps/linenoise
+	url = https://github.com/antirez/linenoise.git

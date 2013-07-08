@@ -9,7 +9,7 @@ struct test_context_s {
   jmp_buf* env;
 };
 
-void test__log( void* data, const char* file, int line, const char* fmt, ... ) {
+static void test__log( void* data, const char* file, int line, const char* fmt, ... ) {
   test_context_t* context = data;
   va_list vargs;
 
@@ -18,12 +18,12 @@ void test__log( void* data, const char* file, int line, const char* fmt, ... ) {
   va_end(vargs);
 }
 
-void test__result( void* data, test_result_t result ) {
+static void test__result( void* data, test_result_t result ) {
   test_context_t* context = data;
   context->result = WORST_RESULT( context->result, result );
 }
 
-void test__exit( void* data ) {
+static void test__exit( void* data ) {
   test_context_t* context = data;
   longjmp(*(context->env), 1);
 }

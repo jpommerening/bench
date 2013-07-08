@@ -27,7 +27,7 @@ ifdef MSVC
 uname_S := MINGW
 endif
 
-CPPFLAGS += -Iinclude
+CPPFLAGS += -Iinclude -Ideps/choice -Ideps/linenoise
 
 ifneq (,$(findstring MINGW,$(uname_S)))
 include config-mingw.mk
@@ -35,13 +35,14 @@ else
 include config-unix.mk
 endif
 
-LIBS = test.a
+LIBS = bench.a
+BINS = bench
 TESTS = test/test-*.c
 BENCHMARKS = test/benchmark-*.c
 
 default: all test
 
-all: $(LIBS)
+all: $(LIBS) $(BINS)
 
 test/gen-tests.c: test/gen-tests.sh $(TESTS)
 	test/gen-tests.sh $(TESTS) > test/gen-tests.c
@@ -50,13 +51,10 @@ test/run-tests$(E): test/gen-tests.c $(TESTS) $(LIBS)
 	$(CC) $(CPPFLAGS) $(LINKFLAGS) -o test/run-tests test/gen-tests.c \
 	  $(TESTS) $(LIBS)
 
-.PHONY: clean clean-platform distclean distclean-platform test bench
+.PHONY: clean clean-platform distclean distclean-platform test
 
 test: test/run-tests$(E)
 	test/run-tests
-
-bench: test/run-benchmarks$(E)
-	test/run-benchmarks
 
 clean: clean-platform
 	$(RM) -f src/*.o *.a test/run-tests$(E) test/run-benchmarks$(E)

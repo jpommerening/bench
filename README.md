@@ -7,7 +7,7 @@
 Compile your tests to a library and run it with the test-runner.
 
 ```console
-you@yourbox$ utest yourlib.so
+you@yourbox$ bench yourtests.so yourlib.so
 TEST this_test_passes: PASS [0.010ms]
 TEST this_test_fails: ...
 test/test-something-broken.c:30: This should work.
